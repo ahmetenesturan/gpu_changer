@@ -20,8 +20,12 @@ int main(int argc, char** argv)
         system("system76-power graphics nvidia");
         system("reboot");
         break;
+    case 'h':
+        system("system76-power graphics hybrid");
+        system("reboot");
+        break;
     default:
-        printf("Wrong argument. Use 'i' for Integrated and 'n' for Nvidia.");
+        printf("Wrong argument. Use 'i' for Integrated, 'n' for Nvidia and 'h' for Hybrid Graphics.");
         break;
     }
     return 0;
